@@ -1,0 +1,325 @@
+@font-face {
+  font-family: caveat-bold;
+  src: url(../font/Caveat-Bold.ttf);
+}
+
+.browse {
+  /* Allow the main content to grow and push footer down when content is short */
+  flex: 1 1 auto;
+  height: 100%;
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+
+  .browse-cont {
+    min-height: 650px;
+    height: auto;
+    max-width: 1100px;
+    width: 100%;
+    margin-top: 100px;
+    margin-bottom: 60px;
+    // background-color: lightgray;
+
+    .browse-header {
+      height: 32px;
+      font-size: 27px;
+      font-family: caveat-bold;
+      letter-spacing: 1.5px;
+      color: black;
+      //   background-color: darkslateblue;
+      margin-bottom: 50px;
+    }
+
+    .recipe-cont {
+      min-height: 575px;
+      height: 100%;
+      //   background-color: coral;
+      width: 100%;
+
+      .recipe-row {
+        width: 100%;
+        height: 263px;
+        // background-color: lightblue;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 50px;
+
+        .recipe {
+          max-width: 525px;
+          width: 100%;
+          min-height: 263px;
+          height: 100%;
+          display: flex;
+          //   background-color: lightseagreen;
+
+          .pizza-pic {
+            max-width: 301px;
+            width: 100%;
+            height: 100%;
+            // background-color: beige;
+            background-image: url(../images/recipe-pizza.jpg);
+            background-repeat: none;
+            background-position: center;
+            background-size: cover;
+            border-radius: 24px;
+          }
+
+          .burger-pic {
+            max-width: 301px;
+            width: 100%;
+            height: 100%;
+            // background-color: beige;
+            background-image: url(../images/recipe-burger.jpg);
+            background-repeat: none;
+            background-position: center;
+            background-size: cover;
+            border-radius: 24px;
+          }
+
+          .biryani-pic {
+            max-width: 301px;
+            width: 100%;
+            height: 100%;
+            // background-color: beige;
+            background-image: url(../images/recipe-pilaf.jpg);
+            background-repeat: none;
+            background-position: center;
+            background-size: cover;
+            border-radius: 24px;
+          }
+          .chow-pic {
+            max-width: 301px;
+            width: 100%;
+            height: 100%;
+            // background-color: beige;
+            background-image: url(../images/recipe-chowmein.jpg);
+            background-repeat: none;
+            background-position: center;
+            background-size: cover;
+            border-radius: 24px;
+          }
+
+          .recipe-desc {
+            height: 100%;
+            max-width: 224px;
+            width: 100%;
+            background-color: white;
+            border-radius: 24px;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+
+            .desc-wrapper {
+              min-height: 177px;
+              height: auto;
+              max-width: 169px;
+              width: 100%;
+              display: flex;
+              align-items: center;
+              justify-content: space-evenly;
+              flex-direction: column;
+              //   background-color: olive;
+
+              .recipe-name {
+                // background-color: yellowgreen;
+                height: 21px;
+                width: auto;
+                margin-bottom: 19px;
+
+                p {
+                  font-family: "Gill Sans", "Gill Sans MT", Calibri,
+                    "Trebuchet MS", sans-serif;
+                  font-size: 15px;
+                  letter-spacing: 1.7px;
+                  //   background-color: aqua;
+                  margin-bottom: 0px;
+                }
+                .underline-pizza {
+                  height: 3px;
+                  width: 130.5px;
+                  background-color: black;
+                }
+
+                .underline-burger {
+                  height: 3px;
+                  width: 129px;
+                  background-color: black;
+                }
+                .underline-biryani {
+                  height: 3px;
+                  width: 141.5px;
+                  background-color: black;
+                }
+                .underline-chow {
+                  height: 3px;
+                  width: 132.5px;
+                  background-color: black;
+                }
+              }
+
+              .pizza-desc {
+                max-width: 133px;
+                width: 100%;
+                min-height: 63px;
+                height: auto;
+                // background-color: lightcyan;
+                margin-bottom: 10px;
+                p {
+                  font-family: "Gill Sans", "Gill Sans MT", Calibri,
+                    "Trebuchet MS", sans-serif;
+                  font-size: 9px;
+                  letter-spacing: 1px;
+                  //   background-color: aquamarine;
+                  line-height: 12px;
+                }
+              }
+              .burger-desc {
+                max-width: 169px;
+                width: 100%;
+                min-height: 80px;
+                height: auto;
+                // background-color: lightcyan;
+                // margin-bottom: 10px;
+                p {
+                  font-family: "Gill Sans", "Gill Sans MT", Calibri,
+                    "Trebuchet MS", sans-serif;
+                  font-size: 9px;
+                  letter-spacing: 1px;
+                  //   background-color: aquamarine;
+                  line-height: 12px;
+                }
+              }
+              .biryani-desc {
+                max-width: 150px;
+                width: 100%;
+                min-height: 63px;
+                height: auto;
+                // background-color: lightcyan;
+                // margin-bottom: 10px;
+                p {
+                  font-family: "Gill Sans", "Gill Sans MT", Calibri,
+                    "Trebuchet MS", sans-serif;
+                  font-size: 9px;
+                  letter-spacing: 1px;
+                  //   background-color: aquamarine;
+                  line-height: 12px;
+                }
+              }
+              .chow-desc {
+                max-width: 142px;
+                width: 100%;
+                min-height: 102px;
+                height: auto;
+                // background-color: lightcyan;
+                // margin-bottom: 10px;
+                p {
+                  font-family: "Gill Sans", "Gill Sans MT", Calibri,
+                    "Trebuchet MS", sans-serif;
+                  font-size: 9px;
+                  letter-spacing: 1px;
+                  //   background-color: aquamarine;
+                  line-height: 12px;
+                }
+              }
+              .time-serve {
+                width: 87px;
+                height: 63px;
+                // background-color: cornflowerblue;
+                margin: 0 auto;
+
+                .time {
+                  height: 24.5px;
+                  width: 100%;
+                  //   background-color: darkorange;
+                  display: flex;
+                  align-items: center;
+                  justify-content: space-evenly;
+                  margin-bottom: 15px;
+                  .icon {
+                    width: 23px;
+                  }
+                  p {
+                    width: 43px;
+                    font-family: "Gill Sans", "Gill Sans MT", Calibri,
+                      "Trebuchet MS", sans-serif;
+                    font-size: 10px;
+                    // background-color: fuchsia;
+                    margin: 0 auto;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .browse {
+    .browse-cont {
+      .recipe-cont {
+        .recipe-row {
+          flex-direction: column;
+          height: auto;
+          width: 100%;
+          align-items: center;
+          //   background-color: lightpink;
+          margin-bottom: -5px;
+
+          .recipe {
+            height: auto;
+            flex-direction: row;
+            align-items: stretch;
+            margin-bottom: 40px;
+            // background-color: lightgreen;
+            .pizza-pic,
+            .burger-pic,
+            .biryani-pic,
+            .chow-pic {
+              width: 100%;
+              height: auto;
+              column-gap: 20px;
+            }
+
+            .recipe-desc {
+              width: 100%;
+              height: auto;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .browse {
+    .browse-cont {
+      .recipe-cont {
+        .recipe-row {
+          .recipe {
+            flex-direction: column;
+
+            .pizza-pic,
+            .burger-pic,
+            .biryani-pic,
+            .chow-pic {
+              width: 100%;
+              height: auto;
+              margin-bottom: 20px;
+            }
+
+            .recipe-desc {
+              width: 100%;
+              height: auto;
+            }
+          }
+        }
+      }
+    }
+  }
+}

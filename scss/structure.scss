@@ -1,0 +1,52 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-bottom: 16px;
+}
+
+/* Make placeholders easy to read across the site */
+input::placeholder,
+textarea::placeholder {
+  color: #000; /* black */
+  opacity: 1; /* ensure full opacity on browsers that dim placeholders */
+}
+/* vendor-prefixed placeholders for cross-browser support */
+::-webkit-input-placeholder {
+  color: #000;
+  opacity: 1;
+}
+::-moz-placeholder {
+  color: #000;
+  opacity: 1;
+}
+:-ms-input-placeholder {
+  color: #000;
+  opacity: 1;
+}
+:-moz-placeholder {
+  color: #000;
+  opacity: 1;
+}
+
+@media only screen and (max-width: 768px) {
+  header nav {
+    display: none;
+  }
+  /* show the hamburger on small screens */
+  #hamburger-icon {
+    display: block;
+  }
+}

@@ -1,0 +1,180 @@
+@font-face {
+  font-family: caveat;
+  src: url(../font/Caveat-Regular.ttf);
+}
+
+.hero {
+  min-height: 100vh;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  background-attachment: fixed;
+  width: 100%;
+  // background-color: purple;
+  background-image: linear-gradient(rgba(242, 092, 084, 0.6)),
+    url(../images/hero.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.browse-hero {
+  min-height: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  background-attachment: fixed;
+  width: 100%;
+  // background-color: purple;
+  background-image: linear-gradient(rgba(167, 232, 189, 0.6)),
+    url(../images/recipe-hero.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.recipe-hero {
+  min-height: 100vh;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  background-attachment: fixed;
+  width: 100%;
+  // background-color: purple;
+}
+
+header {
+  padding: 0px 20px;
+  //   background-color: black;
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+}
+
+header a {
+  text-decoration: none;
+}
+
+#brand {
+  font-weight: bold;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+}
+
+/* push the nav to the right side of the header */
+header nav {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+}
+// #brand a {
+//   color: tomato;
+// }
+
+ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  min-height: 87px;
+  height: 100%;
+  justify-content: space-between;
+  // background-color: paleturquoise;
+  min-width: 550px;
+  width: auto;
+}
+
+ul a {
+  color: black;
+  font-family: caveat;
+  letter-spacing: 1px;
+  font-size: 25px;
+}
+
+ul li {
+  padding: 5px;
+  margin-left: 10px;
+}
+
+ul li :hover {
+  transform: scale(1.1);
+  transition: 0.3s;
+}
+
+.clicked {
+  text-decoration: underline 3px;
+}
+
+#login {
+  border-radius: 5px;
+  padding: 5px 8px;
+  background-color: #ffd972;
+  width: 158px;
+  height: 52px;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.3);
+}
+
+#login a {
+  color: black;
+  font-size: 25px;
+}
+
+#hamburger-icon {
+  margin: auto 0;
+  cursor: pointer;
+  display: none;
+}
+
+#hamburger-icon div {
+  width: 35px;
+  height: 3px;
+  background-color: black;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+.open .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-6px, 6px);
+  transform: rotate(-45deg) translate(-6px, 6px);
+}
+
+.open .bar2 {
+  opacity: 0;
+}
+
+.open .bar3 {
+  -webkit-transform: rotate(45deg) translate(-6px, -6px);
+  transform: rotate(45deg) translate(-6px, -8px);
+}
+
+.open .mobile-menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.mobile-menu {
+  display: none;
+  position: absolute;
+  top: 50px;
+  left: 0;
+  height: calc(100% - 50px);
+  width: 100%;
+}
+.mobile-menu li {
+  margin-bottom: 10px;
+}
+
+@media only screen and (max-width: 768px) {
+  header nav {
+    display: none;
+  }
+  #hamburger-icon {
+    display: block;
+  }
+}

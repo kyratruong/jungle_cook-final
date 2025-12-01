@@ -1,0 +1,109 @@
+@font-face {
+  font-family: caveat;
+  src: url(../font/Caveat-Regular.ttf);
+}
+
+@font-face {
+  font-family: caveat-bold;
+  src: url(../font/Caveat-Bold.ttf);
+}
+
+.create-recipe {
+  max-width: 980px;
+  width: 100%;
+  height: auto;
+  margin: 100px auto;
+  //   background-color: lightgreen;
+  color: black;
+
+  h1 {
+    font-family: caveat-bold;
+    font-size: 27px;
+    margin-bottom: 75px;
+  }
+
+  .recipe-image-line {
+    display: flex;
+
+    // background-color: lightcyan;
+
+    .image-file {
+      width: 110px;
+      height: 36.2px;
+      background-color: #efa7a7;
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      border-radius: 50px;
+      box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.3);
+      margin-top: -25px;
+
+      input {
+        cursor: pointer;
+        opacity: 0;
+        position: absolute;
+        width: 110px;
+        height: 36.2px;
+        margin-bottom: -15px;
+        margin-left: 20px;
+      }
+
+      p {
+        font-family: caveat;
+        font-size: 17px;
+        margin: 0 auto;
+      }
+    }
+  }
+
+  form {
+    // background-color: palegoldenrod;
+    input {
+      margin-bottom: 50px;
+      width: 100%;
+      border: none;
+      border-bottom: 3px solid black;
+      outline: none;
+      background-color: transparent;
+    }
+
+    h3 {
+      margin-bottom: 80px;
+    }
+
+    .add-ingred {
+      position: relative;
+      //   background-color: orange;
+    }
+
+    .add-ingred-btn {
+      position: absolute;
+      bottom: 55px;
+      right: 0;
+      width: 38px;
+      height: 38px;
+      border-radius: 50%;
+      background-color: #efa7a7;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      color: white;
+      font-size: 28px;
+    }
+
+    .submit-btn {
+      display: block;
+      border: none;
+      width: 422px;
+      height: 52px;
+      background-color: #efa7a7;
+      margin: 0 auto;
+      border-radius: 20px;
+      cursor: pointer;
+      font-family: caveat;
+      font-size: 25px;
+      letter-spacing: 1.5px;
+    }
+  }
+}
